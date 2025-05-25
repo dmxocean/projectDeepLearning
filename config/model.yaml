@@ -1,0 +1,20 @@
+# config/model.yaml
+
+baseline:
+  embed_size: 256
+  hidden_size: 512
+  num_layers: 1
+  dropout: 0.5
+  
+attention:
+  embed_size: 256
+  hidden_size: 512
+  attention_dim: 256
+  num_layers: 1
+  dropout: 0.5
+  encoder_dim: 256  # After 1x1 conv
+  
+encoder:
+  architecture: "resnet50"
+  pretrained: true
+  train_cnn: true

@@ -1,0 +1,30 @@
+# config/data.yaml
+
+dataset:
+  name: "flickr8k"
+  root_dir: "flickr8k"
+  images_subdir: "images"
+  captions_filename: "captions.txt"
+  
+preprocessing:
+  vocab_threshold: 5
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  
+image:
+  resize_size: 256
+  crop_size: 224
+  augmentation:
+    color_jitter: 0.2
+    rotation: 10
+    
+debug:
+  enabled: true
+  max_images: 50
+  output_dir: "data/processed/debug"
+  
+paths:
+  processed_dir: "data/processed/flickr8k"
+  vocab_file: "vocab.pkl"
+  splits_file: "splits.pkl"

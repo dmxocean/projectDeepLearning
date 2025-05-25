@@ -1,0 +1,32 @@
+# config/wandb.yaml
+
+wandb:
+  enabled: true
+  entity: "SynthesisOne"
+  project: "DL"
+  
+  # Run configuration
+  tags: ["flickr8k"]
+  notes: "Image captioning"
+  
+  # Logging settings
+  log_frequency: 10  # Log every N batches
+  log_images: true
+  log_predictions: true
+  max_images_to_log: 20
+  
+  # Sweep configuration (optional)
+  sweep:
+    enabled: true
+    method: "bayes"
+    metric:
+      name: "val_loss"
+      goal: "minimize"
+    parameters:
+      learning_rate:
+        min: 1.0e-5
+        max: 1.0e-3
+      batch_size:
+        values: [16, 32, 64]
+      hidden_size:
+        values: [256, 512, 1024]

@@ -1,0 +1,15 @@
+{
+    "dataset": "flickr8k",
+    "debug_mode": false,
+    "vocab_size": 2510,
+    "vocab_threshold": 5,
+    "train_size": 28315,
+    "val_size": 6070,
+    "test_size": 6070,
+    "train_images": 5663,
+    "val_images": 1214,
+    "test_images": 1214,
+    "train_coverage": 97.63799482994577,
+    "val_coverage": 97.02195230666369,
+    "test_coverage": 96.981748158071
+}
