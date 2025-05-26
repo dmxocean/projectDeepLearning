@@ -215,7 +215,7 @@ def create_data_loaders(train_dataset: Dataset, val_dataset: Dataset,
     
     # Worker settings
     import sys
-    num_workers = 4 if sys.platform != 'win32' else 0
+    num_workers = 12 if sys.platform != 'win32' else 0
     
     # Create data loaders
     train_loader = DataLoader(

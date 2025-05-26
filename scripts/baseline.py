@@ -136,8 +136,7 @@ def main():
         optimizer,
         mode='min',
         factor=training_config["lr_scheduler_factor"],
-        patience=training_config["lr_scheduler_patience"],
-        verbose=True
+        patience=training_config["lr_scheduler_patience"]
     )
     
     # Get model directory (call once and reuse)

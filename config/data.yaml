@@ -20,7 +20,7 @@ image:
     rotation: 10
     
 debug:
-  enabled: true
+  enabled: false
   max_images: 50
   output_dir: "data/processed/debug"
   

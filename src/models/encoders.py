@@ -25,7 +25,7 @@ class EncoderCNN(nn.Module):
         super(EncoderCNN, self).__init__()
         
         # Load pre-trained ResNet-50
-        resnet = models.resnet50(pretrained=True)
+        resnet = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
         
         # Different handling for attention vs baseline
         if attention:
